@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/gulp",
-    "deploy": "./node_modules/.bin/gulp deploy-pages"
+    "deploy": "./node_modules/.bin/gulp deploy-pages",
+    "generate": "GENERATE=true ./node_modules/.bin/gulp"
   },
   "keywords": [
     "reveal",

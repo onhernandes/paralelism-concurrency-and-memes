@@ -5,6 +5,10 @@ const gulp         = require('gulp')
 
 // Serve files from /www/
 module.exports = gulp.task('browser-sync', () => {
+  if (process.env.GENERATE || process.env.generate) {
+    return;
+  }
+
   const files = [
     paths.browserSync.html,
     paths.browserSync.js,
