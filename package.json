@@ -1,0 +1,19 @@
+{
+  "name": "paralelism-concurrency-and-memes",
+  "version": "1.0.0",
+  "description": "My talk about parallelism, concurrency & memes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onhernandes/paralelism-concurrency-and-memes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onhernandes/paralelism-concurrency-and-memes/issues"
+  },
+  "homepage": "https://github.com/onhernandes/paralelism-concurrency-and-memes#readme"
+}
