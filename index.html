@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Paralelismo, Concorrência & Memes</title>
+
+    <link rel="stylesheet" href="assets/reveal.css">
+    <link rel="stylesheet" href="assets/hernandes.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="assets/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <p class="footer">@onhernandes</p>
+
+        <section data-background-image="assets/img/intro.jpg">
+          <h2 class="main-title">Paralelismo, Concorrência & Memes</h2>
+        </section>
+
+        <section>
+          <h3>Hernandes</h3>
+          <p>Desenvolvedor Back-End</p>
+          <p>Estudando Ciência da Computação</p>
+          <a href="https://hernandes.io" class="purple-link">hernandes.io</a>
+        </section>
+      </div>
+    </div>
+
+    <script src="assets/head.min.js"></script>
+    <script src="assets/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        transition: 'fade',
+        backgroundTransition: 'fade',
+        dependencies: [
+          { src: 'assets/plugin/markdown/marked.js' },
+          { src: 'assets/plugin/markdown/markdown.js' },
+          { src: 'assets/plugin/notes/notes.js', async: true },
+          { src: 'assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>

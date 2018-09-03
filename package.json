@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/onhernandes/paralelism-concurrency-and-memes/issues"
   },
-  "homepage": "https://github.com/onhernandes/paralelism-concurrency-and-memes#readme"
+  "homepage": "https://github.com/onhernandes/paralelism-concurrency-and-memes#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1"
+  }
 }
