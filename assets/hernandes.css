@@ -88,7 +88,7 @@ body {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-shadow: none;
   word-wrap: break-word; 
 }
@@ -352,5 +352,20 @@ body {
 
 .inner-meme {
   max-height: 60vh !important;
+}
+
+.bigger-meme {
+  height: 75vh !important;
+}
+
+.scrollable {
+  max-height: 80vh !important;
+  height: 80vh !important;
+  overflow: auto !important;
+}
+
+.scrollable img {
+  width: 100% !important;
+  max-height: unset;
 }
 
