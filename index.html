@@ -75,11 +75,15 @@
 
         <section>
           <h3>Então o que realmente é <strike>paralelelismo</strike> isso aí?</h3>
+          <img src="assets/img/wikipedia-screenshot.jpg" alt="captura de tela do site da wikipedia falando sobre paralelismo"/>
         </section>
 
         <section>
           <h3>É quando você executa a mesma operação em CPUs diferentes</h3>
           <img style="min-height: 50vh !important;" src="assets/img/sam-and-jean-running.gif" alt="Sam e Jean, do Supernatural, fugindo lado a lado"/>
+          <aside class="notes">
+            Paralelilsmo executa em CPUs diferentes e em processos diferentes.
+          </aside>
         </section>
 
         <section>
@@ -90,6 +94,9 @@
         <section>
           <h3>multi threading</h3>
           <img style="min-height: 50vh !important;" src="assets/img/girl-drinking-everything.jpg" alt="foto de uma garota bebendo de vários copos com canudos"/>
+          <aside class="notes">
+            Multi threading são vários processos na mesma CPU, isso pode consumir mais recursos limitando a disponibilidade para os outros process.
+          </aside>
         </section>
 
         <section>
@@ -196,10 +203,10 @@
         transition: 'fade',
         backgroundTransition: 'fade',
         dependencies: [
-          { src: 'assets/plugin/markdown/marked.js' },
-          { src: 'assets/plugin/markdown/markdown.js' },
-          { src: 'assets/plugin/notes/notes.js', async: true },
-          { src: 'assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
       });
     </script>
