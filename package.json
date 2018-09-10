@@ -1,33 +1,23 @@
 {
-  "name": "quayly-presenter",
-  "version": "2.0.0",
-  "description": "A boilerplate to create presentations using Reveal.JS, Gulp and more",
+  "name": "paralelism-concurrency-and-memes",
+  "version": "1.0.0",
+  "description": "My talk about parallelism, concurrency & memes",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/gulp",
-    "deploy": "./node_modules/.bin/gulp deploy-pages",
-    "generate": "GENERATE=true ./node_modules/.bin/gulp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "reveal",
-    "gulp",
-    "stylus",
-    "highlight"
-  ],
-  "author": "Willian Justen de Vasconcellos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onhernandes/paralelism-concurrency-and-memes.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onhernandes/paralelism-concurrency-and-memes/issues"
+  },
+  "homepage": "https://github.com/onhernandes/paralelism-concurrency-and-memes#readme",
   "devDependencies": {
-    "browser-sync": "2.23.6",
-    "gulp": "3.9.1",
-    "gulp-cache": "1.0.2",
-    "gulp-concat": "2.6.1",
-    "gulp-cssnano": "2.1.2",
-    "gulp-gh-pages-will": "0.5.5",
-    "gulp-imagemin": "4.1.0",
-    "gulp-plumber": "1.2.0",
-    "gulp-pug": "3.3.0",
-    "gulp-stylus": "2.7.0",
-    "gulp-uglify": "3.0.0",
-    "gulp-util": "3.0.8"
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1"
   }
 }

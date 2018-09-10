@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Paralelismo, Concorrência & Memes</title>
+
+    <link rel="stylesheet" href="assets/reveal.css">
+    <link rel="stylesheet" href="assets/hernandes.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="assets/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- 
+          <p class="footer">@onhernandes</p> f6e813
+        -->
+
+        <section data-background-image="assets/img/intro.jpg">
+          <h2 class="main-title">Paralelismo, Concorrência & Memes</h2>
+        </section>
+
+        <section data-background-color="#222831">
+          <h3 class="yellow-link">Hernandes</h3>
+          <p>Desenvolvedor Back-End</p>
+          <p>Co-Org <a style="color: white" href="https://twitter.com/BackEndBrasil">@BackEndBrasil</a></p>
+          <a href="https://hernandes.io" class="yellow-link">@onhernades | hernandes.io</a>
+        </section>
+
+        <section>
+          <h3>Por que falar de paralelismo e concorrência?</h3>
+          <img class="inner-meme" src="assets/img/spiderman-thinking.jpg" alt="homem-aranha sentado na cadeira, com as pernas esticadas e apoiadas na janela com a mão no queixo pensativo"/>
+        </section>
+
+        <section>
+          <h3>É um assunto fácil, mas a maioria do conteúdo é técnico demais e às vezes isso mais atrapalha do que ajuda</h3>
+          <img src="assets/img/liza.jpg" alt="liza com os braços abertos indicando que o assunto é óbvio: é difícil de entender porque as explicações são difíceis"/>
+        </section>
+
+        <section>
+          <h3>Era uma vez...</h3>
+          <img src="assets/img/php-exec-artisan-screenshot.jpg" alt="captura de tela de um trecho de código em PHP que executa o Artisan via shell usando a função exec();"/>
+        </section>
+
+        <section>
+          <h3>Isso é paralelismo. E funciona. E tem muito sistema no ar usando isso. Mas pode ter formas melhores</h3>
+          <img src="assets/img/sad-hamster.jpg" alt="foto de um hamster olhando para trás com os olhos cheios de lágrimas"/>
+        </section>
+
+        <section>
+          <h3>Entender memes NÃO é difícil!</h3>
+          <img src="assets/img/ronaldinho.jpg" alt="foto do Ronaldinho Gaúcho sorrindo, em um momento que ele pede a jornalista em namoro"/>
+        </section>
+
+        <section>
+          <h3>minha história com o Choque de Cultura</h3>
+          <img src="assets/img/rogeirinho.jpg" alt="Rogeirinho do Choque de Cultura tapando os ouvidos"/>
+        </section>
+
+        <section>
+          <img src="assets/img/ouve-o-que-ce-ta-falando.jpg" alt=""/>
+        </section>
+
+        <section>
+          <h3>Então o que realmente é <strike>paralelelismo</strike> isso aí?</h3>
+          <img src="assets/img/wikipedia-screenshot.jpg" alt="captura de tela do site da wikipedia falando sobre paralelismo"/>
+        </section>
+
+        <section>
+          <h3>É quando você executa a mesma operação em CPUs diferentes</h3>
+          <img style="min-height: 50vh !important;" src="assets/img/sam-and-jean-running.gif" alt="Sam e Jean, do Supernatural, fugindo lado a lado"/>
+          <aside class="notes">
+            Paralelilsmo executa em CPUs diferentes e em processos diferentes.
+          </aside>
+        </section>
+
+        <section>
+          <h3>paralelismo != multi threading</h3>
+          <img src="assets/img/weapons.jpg" alt="personagem dos Simpsons entrando em uma casa armado e se deparando com uma cópia sua também armada"/>
+        </section>
+
+        <section>
+          <h3>multi threading</h3>
+          <img style="min-height: 50vh !important;" src="assets/img/girl-drinking-everything.jpg" alt="foto de uma garota bebendo de vários copos com canudos"/>
+          <aside class="notes">
+            Multi threading são vários processos na mesma CPU, isso pode consumir mais recursos limitando a disponibilidade para os outros process.
+          </aside>
+        </section>
+
+        <section>
+          <h3>e o que é concorrência?</h3>
+          <img src="assets/img/concurrency-example.jpg" alt="exemplo de várias tarefas sendo executadas em ordem"/>
+        </section>
+
+        <section>
+          <h3>Exemplos</h3>
+          <img src="assets/img/code-examples.jpg" alt="foto de apresentador da Globo entusiasmado"/>
+        </section>
+
+        <section>
+          <h3>Concorrência com PHP</h3>
+          <div class="scrollable">
+            <img src="assets/img/php-async.jpg" alt="exemplo de código assíncrono em PHP usando a biblioteca amphp"/>
+          </div>
+        </section>
+
+        <section>
+          <h3>Paralelismo com PHP + comandos shell</h3>
+          <img src="assets/img/php-exec-artisan-screenshot.jpg" alt="captura de tela de um trecho de código em PHP que executa o Artisan via shell usando a função exec();"/>
+        </section>
+
+        <section>
+          <h3>Concorrência com NodeJS</h3>
+          <div class="scrollable">
+            <img src="assets/img/nodejs-concurrency-example.jpg" alt="captura de tela de um trecho de código em JavaScript com NodeJS notificando vários usuários que seu produto já chegou usando promessas"/>
+          </div>
+        </section>
+
+        <section>
+          <h3>Paralelismo com NodeJS</h3>
+					<div class="scrollable">
+						<img src="assets/img/nodejs-parallelism-example.jpg" alt="captura de tela de um trecho de código em JavaScript com NodeJS usando o módulo nativo cluster pra executar o mesmo script em outras CPUs"/>
+					</div>
+        </section>
+
+        <section>
+          <h3>Concorrência com Python</h3>
+					<div class="scrollable">
+						<img src="assets/img/python-concurrency-example.jpg" alt="captura de tela de um trecho de código em Python usando o módulo concurrent para trabalhar com concorrência"/>
+					</div>
+        </section>
+
+        <section>
+          <h3>Paralelismo com Python</h3>
+					<div class="scrollable">
+						<img src="assets/img/python-parallelism-example.jpg" alt="captura de tela de um trecho de código em Python usando o módulo multiprocessing para trabalhar com paralelismo"/>
+					</div>
+        </section>
+
+        <section>
+          <h3>Pontos positivos:</h3>
+          <ul>
+            <li>leitura de disco</li>
+            <li>processamento de dados em massa(famosos workers)</li>
+            <li>melhorar a performance no ponto de vista do usuário(experiência)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Pontos negativos:</h3>
+          <ul>
+            <li>pode custar mais do que você gostaria</li>
+            <li>desnecessário na maioria das vezes</li>
+            <li>consome mais recursos e pode afetar outras coisas(efeitos colaterais)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>agora você pode dizer que sabe sobre memes</h3>
+        </section>
+
+        <section>
+          <h3>e que também sabe sobre paralelismo & concorrência</h3>
+          <img src="assets/img/albert-duck.jpg" alt="foto de um pato com o pelo penteado"/>
+        </section>
+
+        <section>
+          <h3>~ extra</h3>
+          <ul>
+            <li>leia mais sobre locking</li>
+            <li>brinque com algumas coisas simples</li>
+            <li>aplique no seu dia a dia com cuidado</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>fim!</h3>
+          <img class="bigger-meme" src="assets/img/ending.jpg" alt="foto de várias freiras com óculos juntas"/>
+        </section>
+      </div>
+    </div>
+
+    <script src="assets/head.min.js"></script>
+    <script src="assets/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        transition: 'fade',
+        backgroundTransition: 'fade',
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
